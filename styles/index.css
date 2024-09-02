@@ -136,6 +136,7 @@ section {
     position: absolute;
     top: 100%;
     left: 0;
+    box-shadow: 0 30px 30px #0000000e;
 }
 
 .mobile-nav {
@@ -160,6 +161,20 @@ section {
     font-size: 1.5em;
     cursor: pointer;
     display: none;
+}
+
+.mobile-nav-btns__close#mobile-nav-btns__close {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    .main-nav-cont {
+        display: none;
+    }
+
+    .mobile-nav-btns {
+        display: block;
+    }
 }
 
 
@@ -201,12 +216,3 @@ section {
     border-radius: 8px;
     margin-top: 60px;
 }
-
-<section class="home-hero">
-<div class="">
-    <h1>Hi I'm Ogheneserome Aramiyor</h1>
-    <p>I'm a Frontend Developer with a passion for creating clean, modern, and user-friendly websites.</p>
-    <p>Let's build something amazing together.</p>
-    <a href="#projects">PROJECTS</a>
-</div>
-</section>

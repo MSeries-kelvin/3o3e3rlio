@@ -295,7 +295,7 @@ section {
     padding: 12px 20px;
     background-color: #dfdfdf;
     border-radius: 4px;
-    font-size: .8em;
+    font-size: .7em;
     font-weight: 700;
 }
 
@@ -316,5 +316,64 @@ section {
         padding: 12px 20px;
         background-color: #e4e4e4;
         border-radius: 4px;
+    }
+}
+
+/* ------------------- projects section ---------------- */
+
+.projects-content__cont {
+    list-style: none;
+}
+
+.projects-content__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+.projects-content__item.last {
+    margin-bottom: 0px;
+}
+
+.project-image-cont {
+    padding: 20px;
+    background-color: #dddddd;
+    border-radius: 8px;
+}
+
+.project-image-cont img {
+    width: 100%;
+    /* border-radius: inherit; */
+}
+
+.project-item-content h3 {
+    margin-bottom: 20px;
+}
+
+.project-item-content p {
+    margin-bottom: 40px;
+}
+
+.project-item-content a {
+    display: inline-block;
+    padding: 15px 75px;
+    background-color: var(--background-color);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secondary-background-color);
+    border-radius: 8px;
+    /* margin-top: 40px; */
+}
+
+@media (max-width: 950px) {
+    .projects-content__item {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 120px;
+        border: 1px solid #333;
+        padding: 20px;
+        border-radius: 8px;
     }
 }

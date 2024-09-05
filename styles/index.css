@@ -221,6 +221,8 @@ section {
     color: #fff;
     padding-left: 40px;
     padding-right: 40px;
+    /* padding-top: 200px; */
+    /* height: calc(100vh - 90px); */
 }
 
 .home-hero__content {
@@ -410,6 +412,12 @@ section {
     }
 }
 
+@media (max-width: 450px) {
+    .project-item-content a {
+        width: 100%;
+    }
+}
+
 
 
 /* -------------------------- contact section -------------------------- */
@@ -510,3 +518,64 @@ section {
         width: 100%;
     }
 }
+
+
+/* ----------------- footer section -------------------- */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer__upper {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+.footer__upper h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__content-rgt ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer__content-rgt ul li a {
+    font-size: 30px;
+    color: #fff;
+}
+
+.footer__lower {
+    border-top: 1px solid #9c9c9c;
+    padding-top: 40px;
+    text-align: center;
+}
+
+<footer>
+    <div class="main-container">
+        <div class="footer__upper">
+            <div class="footer__content-lf">
+                <h3>Ogheneserome Aramiyor</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla atque error quod illo suscipit facilis quis.</p>
+            </div>
+            <div class="footer__content-rgt">
+                <h3>social</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/ogheneserome-aramiyor-7858b52b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://x.com/dev_serome?t=Yb3-T65zzBbWaFxo9VTInA&s=09" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="https://github.com/MSeries-kelvin"><i class="fa-brands fa-square-github" target="_blank"></i></a></li>
+                    <li><a href="https://www.instagram.com/dev_serome?igsh=MThpaTB2MGw0N2dkZQ==" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__lower">
+            <p>&copf; Copyright {new Date().getYear()}. Made by Ogheneserome Aramiyor</p>
+        </div>
+    </div>
+</footer>

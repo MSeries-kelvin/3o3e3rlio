@@ -557,6 +557,25 @@ footer {
     text-align: center;
 }
 
+
+@media (max-width: 750px) {
+    .footer__content-rgt {
+        order: 1;
+    }
+
+    .footer__content-lf {
+        order: 2;
+    }
+
+    .footer__upper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 80px;
+        margin-bottom: 40px;
+    }
+}
+
 <footer>
     <div class="main-container">
         <div class="footer__upper">

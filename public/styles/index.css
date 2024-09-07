@@ -352,6 +352,7 @@ section {
     box-shadow: 0 0 10px #6d6d6d;
     border-radius: 8px;
     max-width: 50%;
+    height: fit-content;
 }
 
 .project-image-cont img {
